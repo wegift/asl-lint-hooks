@@ -5,3 +5,10 @@
     language: pygrep
     files: '.*.asl.(json|yaml|yml)$'
     types: [file]
+-   id: hard-coded-apigateway-uri
+    name: hard-coded-apigateway-uri
+    description: Checks for hardcoded API Gateway URIs in Step Functions state machine definitions.
+    entry: '".*\.execute-api\.(.*)\.amazonaws\.com"'
+    language: pygrep
+    files: '.*.asl.(json|yaml|yml)$'
+    types: [file]
