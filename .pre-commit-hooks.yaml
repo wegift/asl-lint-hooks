@@ -1,0 +1,7 @@
+-   id: hard-coded-resource-arns
+    name: hard-coded-resource-arns
+    description: Checks for hardcoded resource ARNs in Step Functions state machine definitions.
+    entry: '"arn:aws:(?!states::).*"'
+    language: pygrep
+    files: '.*.asl.(json|yaml|yml)$'
+    types: [file]
